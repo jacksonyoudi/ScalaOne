@@ -14,7 +14,13 @@ package org.jackson.chapter02.datatype
  * 1. scala一切皆为对象
  * 2. anyval 和anyref
  * 3. 相对java系统，更复杂， 面向对象和函数式编程
- * 4.
+ *
+ *
+ * 1. 在scala中有一个根类型any,所有类的父类
+ * 2. scala一切皆对象，分为两大类， anyval, anyRef any子类
+ * 3.  Null类型是scala的特别类型，它只有一个值null,它是bottom class 所有anyRef类型的子类
+ * 4. NOthing是bottom class,所有类的子类，在开发中将nothing复制给任何类型
+ * 5. scala中，implicit conversion
  */
 object TypeDemo01 {
   def main(args: Array[String]): Unit = {
