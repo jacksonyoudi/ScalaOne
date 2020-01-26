@@ -7,6 +7,7 @@ object TypeDemo02 {
     num2 = num.toFloat
 
     print(sayHello)
+
   }
 
   // 在开发中，有一个方法，就会异常中断，这是就可以返回Nothing
