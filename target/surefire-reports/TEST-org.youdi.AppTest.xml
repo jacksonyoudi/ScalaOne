@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="org.youdi.AppTest" time="0.027" tests="1" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="org.youdi.AppTest" time="0.034" tests="1" errors="0" skipped="0" failures="0">
   <properties>
     <property name="gopherProxySet" value="false"/>
     <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
@@ -17,7 +17,7 @@
     <property name="user.country" value="CN"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_172.jdk/Contents/Home/jre/lib"/>
-    <property name="sun.java.command" value="/Users/youdi/Project/javaProject/ScalaOne/target/surefire/surefirebooter6006324020578737230.jar /Users/youdi/Project/javaProject/ScalaOne/target/surefire 2020-01-27T16-42-45_081-jvmRun1 surefire5308560387297778034tmp surefire_07316534632588560880tmp"/>
+    <property name="sun.java.command" value="/Users/youdi/Project/javaProject/ScalaOne/target/surefire/surefirebooter8628319340189399936.jar /Users/youdi/Project/javaProject/ScalaOne/target/surefire 2020-01-28T15-15-08_280-jvmRun1 surefire7847391157361570169tmp surefire_07745822615882146045tmp"/>
     <property name="surefire.test.class.path" value="/Users/youdi/Project/javaProject/ScalaOne/target/test-classes:/Users/youdi/Project/javaProject/ScalaOne/target/classes:/Users/youdi/.m2/repository/junit/junit/4.11/junit-4.11.jar:/Users/youdi/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="/Users/youdi"/>
@@ -30,7 +30,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="/Users/youdi/Project/javaProject/ScalaOne/target/surefire/surefirebooter6006324020578737230.jar"/>
+    <property name="surefire.real.class.path" value="/Users/youdi/Project/javaProject/ScalaOne/target/surefire/surefirebooter8628319340189399936.jar"/>
     <property name="sun.boot.class.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_172.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_172.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_172.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_172.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_172.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_172.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_172.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_172.jdk/Contents/Home/jre/classes"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="1.8.0_172-b11"/>
