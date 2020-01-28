@@ -24,6 +24,8 @@ object BreakDemo {
   * op => 表示没有输入和返回，相当于代码块
   * try  catch捕获异常
   * 4. 当我们传入的代码块，使用 {}
+  * 5. 在 do while中也可以使用break
+  * 6. 使用循环守卫实现break，注意编译器不会执行后续代码，发现标记会一直不会修改
      *
      */
     breakable {
