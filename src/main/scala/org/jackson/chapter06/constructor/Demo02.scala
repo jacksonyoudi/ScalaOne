@@ -6,6 +6,9 @@ package org.jackson.chapter06.constructor
  * 辅助构造器无论直接或间接，最终必须一定要调主构造器,执行主构造器的逻辑
  *
  *
+ * 如果想让主构造器变成私有的，可以在()之前加上private
+ *
+ *
  */
 object Demo02 {
   def main(args: Array[String]): Unit = {
