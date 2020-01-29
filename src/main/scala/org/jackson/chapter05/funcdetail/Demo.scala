@@ -13,6 +13,7 @@ package org.jackson.chapter05.funcdetail
  * 9. 位置默认值 (名称参数)
  * 10. scala形参默认是val
  * 11. 递归函数未执行前是无法推断出来结果，在使用时必须有明确的返回值类型
+ * 13. 可变参数 (args: Int*)
  */
 object Demo {
   def main(args: Array[String]): Unit = {
