@@ -8,6 +8,14 @@ package org.jackson.chapter06
  * java中基本类型不是面向对象，静态方法
  *
  * scala一切皆对象
+ *
+ * 对象创建流程
+ * 1. 加载类的信息(属性,方法信息)
+ * 2. 在内存(堆)开辟空间
+ * 使用父类构造器(主辅)
+ * 3. 使用主构造器对属性进行初始化
+ * 4. 使用辅助构造器对属性进行初始化
+ * 5. 将开辟的对象内存地址赋值给p这个引用
  */
 object ObjectDemo {
   def main(args: Array[String]): Unit = {
