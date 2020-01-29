@@ -21,6 +21,8 @@ class Cat {
   var name: String = "" // 必须有初始值
   var age: Int = _ // 默认值，表示对应类型的零值
   var color: String = _ // 也是 ""
+
+
   override def toString: String = {
     return this.color + this.age + this.name
   }
