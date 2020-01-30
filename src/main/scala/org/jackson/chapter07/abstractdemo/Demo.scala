@@ -7,6 +7,13 @@ package org.jackson.chapter07.abstractdemo
  *
  * 继承:
  *
+ *
+ * javap:可以查看.class文件的反编译的方法声明
+ * javap -c  查看汇编的代码
+ * []泛型
+ *
+ * 构造器:实例化类的同时，进行初始化，注意点，
+ *
  */
 
 object Demo {
