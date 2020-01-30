@@ -2,7 +2,8 @@ package org.jackson.chapter07.visit
 
 object Demo {
   def main(args: Array[String]): Unit = {
-
+    val c = new Clerk
+    c.ShowInfo()
   }
 }
 
