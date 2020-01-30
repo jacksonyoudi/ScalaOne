@@ -4,11 +4,12 @@ package org.jackson.chapter07
 /**
  * 1. 在包中直接写属性或方法，就错误，使用包对象解决
  * 2. package object scala表示创建一个包对象
- * 3. 每一个包都可以有一个包对象
+ * 3. 每一个包都可以有一个包对象，仅仅只有一个， 包对象和包是平级的
  * 4. 包对象的名字需要和子包一样
  * 5. 在包对象中可以定义变量和方法
  * 6. 对应包内可以直接使用
  * 7. 在包的目录下， 包对象对应两个.class package.class package$.class
+ * 8. 包对象是静态类
  */
 package object pkgobj {
   var name: String = _
