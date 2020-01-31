@@ -15,6 +15,8 @@ package org.jackson.chapter07.inherit
  * scala类型的转换和检查
  * 向上或向下转型
  *
+ * 最佳实践，对类型进行判断
+ *
  *
  */
 object Demo {
