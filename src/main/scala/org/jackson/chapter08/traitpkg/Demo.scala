@@ -16,6 +16,7 @@ package org.jackson.chapter08.traitpkg
  *
  *
  * 1. 特质 可以同时拥有抽象方法和具体方法，一个类可以实现和继承多个特质
+ * 2.
  */
 object Demo {
   def main(args: Array[String]): Unit = {
