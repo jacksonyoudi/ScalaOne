@@ -9,16 +9,26 @@ package org.jackson.chapter08.mixin
  *
  * 当做富接口使用的特质
  * 富接口: 即该特质中既有抽象方法，又有非抽象方法
+ *
+ *
+ * 特质中可以定义具体的字段，如果初始化了就是 具体的字段，如果不初始化就是抽象字段
+ * 混入该特质的类就是具有了该字段，字段不是继承，而是直接加入类，成为自己的字段
+ *
+ * 抽象字段必须被覆写
  */
 object MixinDemo02 {
   def main(args: Array[String]): Unit = {
-    val sql = new Sql with DB5 with File5
+    val sql = new Sql with DB5 with File5 {
+      override var name: String = _
+    }
     sql.insert(10)
   }
 }
 
 
 trait Operator5 {
+  var name: String
+
   def insert(id: Int)
 }
 

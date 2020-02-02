@@ -9,6 +9,14 @@ package org.jackson.chapter08.mixin
  * 2. apply
  * 3. 匿名子类
  * 4. 动态混入
+ *
+ *
+ * 混入的方式
+ * 1. 创建时候混入 匿名类的方式
+ * 2. 声明类的同时 进行混入
+ * 3.
+ *
+ *
  */
 object Demo01 {
   def main(args: Array[String]): Unit = {
@@ -50,4 +58,3 @@ abstract class MySqlDB {
 abstract class Sqlite {
   def say()
 }
-
