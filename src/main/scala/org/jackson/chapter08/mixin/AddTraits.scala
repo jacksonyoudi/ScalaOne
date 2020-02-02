@@ -4,6 +4,9 @@ package org.jackson.chapter08.mixin
  * 如果同时 混入多个特质，称之为 叠加特质
  * 构建顺序
  * 执行方法顺序
+ *
+ * 指定 调用具体的超类
+ * super[Data].insert(10) 只能是直接父特质 才行
  */
 object AddTraits {
   def main(args: Array[String]): Unit = {
@@ -18,6 +21,13 @@ object AddTraits {
     // 3. 如果左边没有特质，则super就是父特质
     //
     // 向文件 向数据库  插入数据
+
+    val my = new MySql with File with DB
+    // Operate  data  File db
+
+    // 向数据库 向文件 插入数据
+    my.insert(10)
+
   }
 }
 
