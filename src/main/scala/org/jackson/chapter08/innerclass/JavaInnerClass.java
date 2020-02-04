@@ -1,5 +1,11 @@
 package org.jackson.chapter08.innerclass;
 
+
+/**
+ * 内部类
+ * 1. 内部直接使用私有属性
+ * 2. 延时加载，单例
+ */
 public class JavaInnerClass {
     public static void main(String[] args) {
         OuterClass out1 = new OuterClass();
