@@ -17,6 +17,7 @@ object ScalaInnerClass {
 
     // 默认情况下， scala的内部类的实例和创建该内部类实例的外部对象关联
     sInnerClass.test(sInnerClass)
+    sInnerClass.test(sInnerClass1)
 
 
     // 创建静态类
@@ -58,6 +59,7 @@ class SoutClassOne {
     }
 
     // 类型投影
+    // 类型投影的作用就是屏蔽 外部对象对内部类对象的影响
     def test(in: SoutClassOne#SInnerClass): Unit = {
       println(in)
     }
