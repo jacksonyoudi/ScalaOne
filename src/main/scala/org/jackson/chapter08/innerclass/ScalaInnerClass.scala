@@ -8,11 +8,15 @@ object ScalaInnerClass {
     val soutClass = new SoutClassOne()
     val soutClass1 = new SoutClassOne()
 
+
     // 对象 内部类 的方式创建 这里语法可以看出scala中，默认情况下内部类实例
     // 和外部对象关联
     val sInnerClass = new soutClass.SInnerClass()
     sInnerClass.info()
     val sInnerClass1 = new soutClass1.SInnerClass()
+
+    // 默认情况下， scala的内部类的实例和创建该内部类实例的外部对象关联
+    sInnerClass.test(sInnerClass)
 
 
     // 创建静态类
@@ -51,6 +55,11 @@ class SoutClassOne {
   class SInnerClass {
     def info(): Unit = {
       println("name=" + myouter.name + " sal=" + myouter.sal)
+    }
+
+    // 类型投影
+    def test(in: SoutClassOne#SInnerClass): Unit = {
+      println(in)
     }
   }
 
