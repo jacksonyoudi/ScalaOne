@@ -21,7 +21,15 @@ object ArrayDemo01 {
     for (elem <- ints) {
       println(elem)
     }
+    /**
+     * 使用 Array apply
+     * 使用泛型
+     */
+    val array = Array(1, 2, "4")
 
+    for (index <- 0 to array.length - 1) {
+      println(array(index))
+    }
   }
 }
 
