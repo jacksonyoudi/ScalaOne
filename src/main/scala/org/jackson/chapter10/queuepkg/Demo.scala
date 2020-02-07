@@ -10,7 +10,14 @@ object Demo {
     ints += 4
     ints ++= List(1, 2)
 
+    println(ints)
 
+    // 入队列 ，队尾
+    ints.enqueue(7)
 
+    // 出队列
+    println(ints.dequeue())
+
+    println(ints)
   }
 }
