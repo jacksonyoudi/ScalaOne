@@ -6,6 +6,11 @@ package org.jackson.chapter10.tuplepkg
  *
  * 注意： 元祖中最大只能有22个元素
  *
+ * 元祖数据的遍历
+ *
+ * tuple是一个整体， 遍历需要调用其迭代器
+ *
+ *
  */
 object Demo {
   def main(args: Array[String]): Unit = {
@@ -14,5 +19,16 @@ object Demo {
     // 分别 Tuple1---> Tuple22
     val tuple1 = (1, 2, 3, 4, "hello", 4)
     println(tuple1)
+
+    //元素访问
+
+    println(tuple1._1) // 第一个元素
+    println(tuple1.productElement(0))
+
+
+    // 遍历元祖,要使用迭代器
+    for (elem <- tuple1.productIterator) {
+      println("item->", elem)
+    }
   }
 }
