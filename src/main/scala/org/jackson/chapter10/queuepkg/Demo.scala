@@ -18,6 +18,14 @@ object Demo {
     // 出队列
     println(ints.dequeue())
 
+    // 获取第一个元素，对队列无影响
+    println(ints.head)
+    println(ints.last)
+
+    // tail 取出队尾的数据， 返回除了第一个以外剩余的元素
+    println(ints.tail.tail)
+    println(ints.front)
+
     println(ints)
   }
 }
