@@ -1,8 +1,16 @@
 package org.jackson.chapter11.highfunc
 
+
+/**
+ * 传参数， 使用回调地址， 使用函数当参数使用
+ *
+ *
+ */
 object Demo {
   def main(args: Array[String]): Unit = {
-    test(sum, 3)
+    test(sum _, 3)
+    // 把一个函数赋值给一个变量
+    val f1 = myprint _ // 下划线表示不执行
   }
 
   // test就是高阶函数，
@@ -15,6 +23,10 @@ object Demo {
 
   def sum(d: Double): Double = {
     2 * d
+  }
+
+  def myprint(): Unit = {
+    println("hello,world!!!")
   }
 }
 
