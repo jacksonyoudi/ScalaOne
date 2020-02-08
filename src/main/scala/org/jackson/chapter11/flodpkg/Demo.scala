@@ -1,5 +1,10 @@
 package org.jackson.chapter11.flodpkg
 
+/**
+ * 折叠的缩写
+ * flodLeft /:
+ * flodright :\
+ */
 object Demo {
   def main(args: Array[String]): Unit = {
     val list1 = List(1, 2, 3, 4)
@@ -16,6 +21,10 @@ object Demo {
 
     println(list1.foldLeft(5)(minus)) // 函数柯里化
     println(list1.foldRight(5)(minus))
+
+    // 简写
+    (1 /: list1) (minus)
+    (list1 :\ 10) (minus)
   }
 
 
