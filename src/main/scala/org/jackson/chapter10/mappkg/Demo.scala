@@ -7,6 +7,8 @@ import scala.collection.mutable
  * 输出顺序和声明顺序一致
  * 构建map集合中，集合中的元素其实是tuple2类型的
  * 默认情况下使用map是不可变
+ *
+ *
  */
 object Demo {
   def main(args: Array[String]): Unit = {
@@ -28,9 +30,37 @@ object Demo {
     val map4 = mutable.Map(("one", "hello"), (1, 3), (4, 6))
     println(map4)
 
-    val a = (1, 2, 3)
+    var a = (1, 2, 3)
     println(a.getClass)
     val b = new Tuple2(1, 2)
     println(b.getClass)
+
+
+    /**
+     * 如果我们 确定map有这个key，则应当使用map(key),速度快
+     * 不确定是否有key,可以先使用  contains进行判断
+     * 如果只是简单的希望得到一个值，是否
+     */
+    // 如果没有 就报错
+    println(map4("one"))
+
+    // contains
+    if (map4.contains("one")) {
+      println(map4("one"))
+    } else {
+      println("key not exits")
+    }
+
+    // get
+    println(map4.get("one").get) // some
+    println(map4.get("one~"))
+
+    // getOrElse()
+    println(map4.getOrElse("one0", "null"))
+
+
+    // 注意 不可变map不能修改,存在更新 不存在就添加
+    map4("three") = 3
+    println(map4)
   }
 }
