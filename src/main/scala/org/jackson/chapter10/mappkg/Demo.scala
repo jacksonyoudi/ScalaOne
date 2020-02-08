@@ -72,5 +72,7 @@ object Demo {
     map4 -= ("one", "two")
     println(map4)
 
+
+
   }
 }
