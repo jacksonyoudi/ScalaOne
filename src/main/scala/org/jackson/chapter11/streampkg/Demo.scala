@@ -4,6 +4,8 @@ package org.jackson.chapter11.streampkg
 /**
  * stream是一种集合，这个集合，可以用于存放无限多个元素，但是这个无穷个元素并不会一次性生产出来，而是需要用到
  * 多大的区间，就会动态的生产，末尾元素遵循lazy规则 (要使用结果才进行计算的)
+ *
+ * 当对stream执行tail时候，就会生成新的数据
  */
 object Demo {
   def main(args: Array[String]): Unit = {
