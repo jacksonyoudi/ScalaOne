@@ -11,8 +11,12 @@ object Demo {
     var res = 0
 
     /**
-     *  => 可以多行 不需要 break,从上往下，自动退出
-     *  都没匹配成功， _
+     * => 可以多行 不需要 break,从上往下，自动退出
+     * 都没匹配成功， _
+     *
+     * 如果 没有 _, 都没匹配成功，就会抛出异常
+     * 不用break，自动中断
+     * 可以在macth中进行很多类型匹配，类型比较疏松
      */
     operar match {
       case '+' => {
@@ -27,6 +31,7 @@ object Demo {
       case '/' => {
         res = n1 / n2
       }
+      case 1 => println("one")
       case _ => {
         println("oper err")
       }
