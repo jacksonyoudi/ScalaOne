@@ -16,5 +16,9 @@ object MatchVar {
 
     println(res)
 
+    // 自动推导
+    var (x, y) = (3, 4)
+
+
   }
 }
