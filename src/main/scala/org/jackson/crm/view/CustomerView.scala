@@ -25,7 +25,7 @@ class CustomerView {
       key match {
         case '1' => this.add()
         case '2' => println("修改客户")
-        case '3' => println("删除客户")
+        case '3' => this.delete
         case '4' => this.list()
         case '5' => this.loop = false
         case _ => println(key + "输入不合法")
@@ -67,6 +67,32 @@ class CustomerView {
     custer.email = StdIn.readLine()
 
     this.service.add(custer)
-    println("-----------添加客户 ok------------------------------------ßß")
+    println("-----------添加客户 ok------------------------------------")
+  }
+
+  def delete(): Unit = {
+    println()
+    println("---------------------删除客户-------------------------------")
+    print("请输入待删除的编号id (-1退出):")
+    var id = StdIn.readInt()
+    if (id == -1) {
+      println("放弃删除")
+      return
+    }
+
+    print("确认删除(Y/N):")
+    var choice = StdIn.readChar().toLower
+    if (choice == 'y') {
+      val bool = this.service.delete(id)
+      if (bool) {
+        println("删除成功")
+      } else {
+        println("删除失败，可能是id不存在")
+      }
+    } else {
+      println("放弃删除")
+    }
+
+
   }
 }

@@ -19,4 +19,24 @@ class CustomerService {
     customers.append(customer)
     true
   }
+
+  def findIndexbyId(id: Int): Int = {
+    var index = -1
+    for (i <- 0 until customers.length) {
+      if (customers(i).id == id) {
+        return i
+      }
+    }
+    index
+  }
+
+  def delete(id: Int): Boolean = {
+    val index = findIndexbyId(id)
+    if (index == -1) {
+      return false
+    }
+
+    customers.remove(index)
+    true
+  }
 }
