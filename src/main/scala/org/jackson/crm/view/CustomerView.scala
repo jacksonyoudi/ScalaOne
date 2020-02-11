@@ -1,5 +1,6 @@
 package org.jackson.crm.view
 
+import org.jackson.crm.bean.Customer
 import org.jackson.crm.service.CustomerService
 
 import scala.io.StdIn
@@ -22,7 +23,7 @@ class CustomerView {
       print("请选择(1-5): ")
       key = StdIn.readChar()
       key match {
-        case '1' => println("添加客户")
+        case '1' => this.add()
         case '2' => println("修改客户")
         case '3' => println("删除客户")
         case '4' => this.list()
@@ -44,5 +45,28 @@ class CustomerView {
     }
     println("------------------------客户列表完成--------------------------")
 
+  }
+
+  def add(): Unit = {
+    var custer = new Customer()
+    println()
+    println("---------------------添加客户-------------------------------")
+    print("姓名:")
+    custer.name = StdIn.readLine()
+
+    print("性别:")
+    custer.gender = StdIn.readChar()
+
+    print("年龄:")
+    custer.age = StdIn.readShort()
+
+    print("电话:")
+    custer.tel = StdIn.readLine()
+
+    print("email:")
+    custer.email = StdIn.readLine()
+
+    this.service.add(custer)
+    println("-----------添加客户 ok------------------------------------ßß")
   }
 }
